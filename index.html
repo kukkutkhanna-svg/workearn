@@ -57,6 +57,7 @@ background:rgba(255,255,255,.05);
 border-bottom:1px solid rgba(255,255,255,.08);
 position:sticky;
 top:0;
+z-index:100;
 }
 
 .logo{
@@ -261,6 +262,108 @@ display:none;
 .insta-btn span{
     font-size:20px;
 }
+.creator-section{
+    display:flex;
+    justify-content:center;
+    padding:90px 20px;
+}
+
+.creator-card{
+
+    width:100%;
+    max-width:420px;
+
+    padding:40px;
+
+    text-align:center;
+
+    border-radius:28px;
+
+    background:rgba(255,255,255,.05);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    box-shadow:0 15px 50px rgba(0,0,0,.35);
+
+    transition:.35s;
+    position:relative ;
+    z-index: 1;
+}
+
+.creator-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 20px 70px rgba(0,255,255,.15);
+
+}
+
+.creator-badge{
+
+    display:inline-block;
+
+    padding:8px 18px;
+
+    border-radius:50px;
+
+    background:rgba(0,255,255,.1);
+
+    color:#70F3FF;
+
+    font-size:14px;
+
+    margin-bottom:25px;
+
+    border:1px solid rgba(0,255,255,.25);
+
+}
+
+.creator-avatar{
+    width:110px;
+    height:110px;
+    margin:auto;
+    border-radius:50%;
+    overflow:hidden;
+    border:3px solid rgba(255,255,255,.15);
+    box-shadow:0 0 25px rgba(0,198,255,.4);
+}
+
+.creator-avatar img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+
+.creator-card h2{
+
+    margin-top:25px;
+
+    color:white;
+
+    font-size:30px;
+
+}
+
+.creator-card p{
+
+    margin-top:18px;
+
+    color:#B8C5D6;
+
+    line-height:1.8;
+
+    font-size:16px;
+
+}
+
+.creator-buttons{
+
+    margin-top:30px;
+
+}
 </style>
 
 </head>
@@ -355,6 +458,30 @@ Complete trusted offers, invite your friends, monitor every referral, and enjoy 
 </a>
 </div> 
 </section> 
+</section> 
+
+
+  <section class="creator-section">
+
+    <div class="creator-card">
+
+        <div class="creator-badge">
+            👨‍💻 Meet The Creator
+        </div>
+
+        <div class="creator-avatar">
+    <img src="7d24a6dd9da3da70fbbf39aef790d5d6.jpg" alt="Hemant Shrivastava">
+</div>
+
+        <h2>Hemant Shrivastava</h2>
+
+        <p>
+            Helping thousands of users discover trusted earning apps,
+            referral offers, cashback deals, and online income opportunities.
+        </p>
+
+    </div>
+
 </section>
 
 <footer>
