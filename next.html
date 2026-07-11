@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Offers - WorkEarn</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins,sans-serif;
+}
+
+body{
+background:#030712;
+color:white;
+padding:20px;
+}
+
+h1{
+text-align:center;
+margin-bottom:20px;
+color:#00E5FF;
+}
+
+.search{
+margin-bottom:20px;
+}
+
+.search input{
+width:100%;
+padding:15px;
+border:none;
+outline:none;
+border-radius:12px;
+background:#111827;
+color:white;
+font-size:15px;
+}
+
+.offer{
+background:#111827;
+border:1px solid rgba(255,255,255,.08);
+border-radius:18px;
+padding:18px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:15px;
+}
+
+.offer h3{
+margin-bottom:6px;
+}
+
+.offer p{
+color:#00ff99;
+font-size:14px;
+}
+
+.offer button{
+padding:10px 18px;
+border:none;
+border-radius:10px;
+background:#00E5FF;
+font-weight:600;
+cursor:pointer;
+}
+
+.offer button:hover{
+opacity:.9;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>Refer and Earn</h1>
+
+<div class="search">
+<input type="text" id="search" placeholder="Search App..." onkeyup="searchApp()">
+</div>
+
+<div id="offers">
+
+<div class="offer">
+<div>
+<h3>Josh Talks</h3>
+<p>Earn ₹500/Hour</p>
+</div>
+<button onclick="https://joshjobs.joshtalks.com/">Open</button>
+</div>
+
+<div class="offer">
+<div>
+<h3>Upstox</h3>
+<p>Earn ₹700</p>
+</div>
+<button onclick="window.open('https://upstox.onelink.me/0H1s/65ASFQ')">Open</button>
+</div>
+
+<div class="offer">
+<div>
+<h3>Angel One</h3>
+<p>Earn ₹600</p>
+</div>
+<button onclick="window.open('https://www.angelone.in')">Open</button>
+</div>
+
+<div class="offer">
+<div>
+<h3>INDmoney</h3>
+<p>Earn ₹400</p>
+</div>
+<button onclick="window.open('https://www.indmoney.com')">Open</button>
+</div>
+
+<div class="offer">
+<div>
+<h3>CRED</h3>
+<p>Earn ₹300</p>
+</div>
+<button onclick="window.open('https://cred.club')">Open</button>
+</div>
+
+<div class="offer">
+<div>
+<h3>PhonePe</h3>
+<p>Earn ₹250</p>
+</div>
+<button onclick="window.open('https://www.phonepe.com')">Open</button>
+</div>
+
+<div class="offer">
+<div>
+<h3>Jupiter</h3>
+<p>Earn ₹450</p>
+</div>
+<button onclick="window.open('https://jupiter.money')">Open</button>
+</div>
+
+<div class="offer">
+<div>
+<h3>Fi Money</h3>
+<p>Earn ₹500</p>
+</div>
+<button onclick="window.open('https://fi.money')">Open</button>
+</div>
+
+</div>
+
+<script>
+
+function searchApp(){
+
+let input=document.getElementById("search").value.toUpperCase();
+
+let offer=document.getElementsByClassName("offer");
+
+for(let i=0;i<offer.length;i++){
+
+let title=offer[i].getElementsByTagName("h3")[0];
+
+if(title.innerHTML.toUpperCase().indexOf(input)>-1){
+
+offer[i].style.display="flex";
+
+}else{
+
+offer[i].style.display="none";
+
+}
+
+}
+
+}
+
+</script>
+
+</body>
+</html>
